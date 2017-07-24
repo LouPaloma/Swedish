@@ -1,0 +1,42 @@
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!-- <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern> -->
+			<pattern>[%d{YYYY.MM.dd HH:mm:ss.SSS}] [%X{server_id}:%thread] %-5level %C.%M\(%F:%L\) - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- Support multiple-JVM writing to the same log file -->
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>log/Swedish.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxHistory>2</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>20MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<!-- <pattern>[%d{MM.dd HH:mm:ss.SSS}] [%thread] %-5p %C.%M - %m%n</pattern> -->
+			<pattern>[%d{MM.dd HH:mm:ss.SSS}] [%X{server_id}:%thread] %-5level %C.%M - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+
+	<logger name="org.springframework.boot.actuate.audit.listener.AuditListener" level="WARN" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+		<logger name="org.disorg" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</logger>
+	
+
+</configuration>

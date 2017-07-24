@@ -1,0 +1,472 @@
+[06.07 12:10:41.097] [:main] INFO  org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.disorg.SwedishControllerRemoteTest], using SpringBootContextLoader
+[06.07 12:10:41.104] [:main] INFO  org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [org.disorg.SwedishControllerRemoteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[06.07 12:10:41.106] [:main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [org.disorg.SwedishControllerRemoteTest]: SwedishControllerRemoteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[06.07 12:10:41.193] [:main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration org.disorg.SwedishController for test class org.disorg.SwedishControllerRemoteTest
+[06.07 12:10:41.199] [:main] INFO  org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[06.07 12:10:41.208] [:main] INFO  org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+[06.07 12:10:41.209] [:main] INFO  org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+[06.07 12:10:41.212] [:main] INFO  org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29f69090, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@568bf312, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ca263c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@589b3632, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@45f45fa1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4c6e276e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@534df152, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52e677af, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35083305, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@8e0379d]
+[06.07 12:10:41.652] [:main] INFO  org.springframework.boot.StartupInfoLogger.logStarting - Starting SwedishControllerRemoteTest on bvt00234 with PID 260 (started by billsa in C:\tmp\Dropbox\workspace\Swedish)
+[06.07 12:10:41.653] [:main] DEBUG org.springframework.boot.StartupInfoLogger.logStarting - Running with Spring Boot v1.4.6.RELEASE, Spring v4.3.8.RELEASE
+[06.07 12:10:41.653] [:main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+[06.07 12:10:41.683] [:main] INFO  org.springframework.context.support.AbstractApplicationContext.prepareRefresh - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3214ee6: startup date [Wed Jun 07 12:10:41 PDT 2017]; root of context hierarchy
+[06.07 12:10:41.847] [:background-preinit] INFO  org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.5.Final
+[06.07 12:10:43.081] [:main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3214ee6: startup date [Wed Jun 07 12:10:41 PDT 2017]; root of context hierarchy
+[06.07 12:10:43.141] [:main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[06.07 12:10:43.142] [:main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[06.07 12:10:43.172] [:main] INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[06.07 12:10:43.172] [:main] INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[06.07 12:10:43.208] [:main] INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[06.07 12:10:43.334] [:main] ERROR org.disorg.SwedishController.run - Must supply one or more files to translate.
+[06.07 12:10:43.337] [:main] INFO  org.springframework.boot.StartupInfoLogger.logStarted - Started SwedishControllerRemoteTest in 2.058 seconds (JVM running for 2.699)
+[06.07 12:10:43.862] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["tuffing","tuffing",null,null,0]],null,"en"]
+[06.07 12:10:43.862] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["förseelse","wrongdoing",null,null,2]],null,"en"]
+[06.07 12:10:43.862] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: tuffing
+[06.07 12:10:43.862] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: förseelse
+[06.07 12:10:43.866] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: tuffing
+[06.07 12:10:43.866] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: förseelse
+[06.07 12:10:43.875] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["binnikemask","tapeworm",null,null,2]],null,"en"]
+[06.07 12:10:43.875] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: binnikemask
+[06.07 12:10:43.876] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: binnikemask
+[06.07 12:10:43.910] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["spjäla","slat",null,null,2]],null,"en"]
+[06.07 12:10:43.910] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: spjäla
+[06.07 12:10:43.914] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: spjäla
+[06.07 12:10:43.927] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["attityd","attitude",null,null,2]],null,"en"]
+[06.07 12:10:43.927] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: attityd
+[06.07 12:10:43.928] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: attityd
+[06.07 12:10:43.930] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["vågat","ventured",null,null,0]],null,"en"]
+[06.07 12:10:43.930] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: vågat
+[06.07 12:10:43.930] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: vågat
+[06.07 12:10:43.963] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["underskott","shortfall",null,null,2]],null,"en"]
+[06.07 12:10:43.966] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["cognac","cognac",null,null,2]],null,"en"]
+[06.07 12:10:43.966] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ljud","sounds",null,null,1]],null,"en"]
+[06.07 12:10:43.969] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: underskott
+[06.07 12:10:43.969] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: cognac
+[06.07 12:10:43.969] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ljud
+[06.07 12:10:43.969] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: underskott
+[06.07 12:10:43.970] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: cognac
+[06.07 12:10:43.970] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: ljud
+[06.07 12:10:44.000] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["rit","rite",null,null,2]],null,"en"]
+[06.07 12:10:44.000] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: rit
+[06.07 12:10:44.001] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: rit
+[06.07 12:10:44.002] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Det finns en","Theresa",null,null,1]],null,"en"]
+[06.07 12:10:44.002] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Det finns en
+[06.07 12:10:44.002] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Det finns en
+[06.07 12:10:44.004] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["marknadsförare","marketers",null,null,0]],null,"en"]
+[06.07 12:10:44.004] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: marknadsförare
+[06.07 12:10:44.004] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: marknadsförare
+[06.07 12:10:44.035] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ordna om","rearrange",null,null,2]],null,"en"]
+[06.07 12:10:44.035] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["levelheaded","levelheaded",null,null,0]],null,"en"]
+[06.07 12:10:44.036] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ordna om
+[06.07 12:10:44.036] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["flodhästar","hippopotami",null,null,0]],null,"en"]
+[06.07 12:10:44.036] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: levelheaded
+[06.07 12:10:44.036] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: ordna om
+[06.07 12:10:44.036] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: flodhästar
+[06.07 12:10:44.036] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: levelheaded
+[06.07 12:10:44.036] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: flodhästar
+[06.07 12:10:44.070] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["försvann","vanished",null,null,1]],null,"en"]
+[06.07 12:10:44.071] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: försvann
+[06.07 12:10:44.071] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: försvann
+[06.07 12:10:44.070] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["sleighed","sleighed",null,null,0]],null,"en"]
+[06.07 12:10:44.071] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["videokassetter","videocassettes",null,null,0]],null,"en"]
+[06.07 12:10:44.071] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: sleighed
+[06.07 12:10:44.071] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: videokassetter
+[06.07 12:10:44.077] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: sleighed
+[06.07 12:10:44.077] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: videokassetter
+[06.07 12:10:44.108] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bokollon","beechnuts",null,null,0]],null,"en"]
+[06.07 12:10:44.109] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bokollon
+[06.07 12:10:44.109] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["supraledare","superconductor",null,null,0]],null,"en"]
+[06.07 12:10:44.109] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: bokollon
+[06.07 12:10:44.109] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: supraledare
+[06.07 12:10:44.109] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: supraledare
+[06.07 12:10:44.110] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["liknelse","metaphor",null,null,2]],null,"en"]
+[06.07 12:10:44.110] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: liknelse
+[06.07 12:10:44.110] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: liknelse
+[06.07 12:10:44.143] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["hooped","hooped",null,null,0]],null,"en"]
+[06.07 12:10:44.143] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Ljung","Heather",null,null,2]],null,"en"]
+[06.07 12:10:44.144] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: hooped
+[06.07 12:10:44.144] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Ljung
+[06.07 12:10:44.144] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: hooped
+[06.07 12:10:44.144] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Ljung
+[06.07 12:10:44.145] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Gupta","Gupta",null,null,0]],null,"en"]
+[06.07 12:10:44.146] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Gupta
+[06.07 12:10:44.146] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Gupta
+[06.07 12:10:44.177] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["vasaller","vassals",null,null,0]],null,"en"]
+[06.07 12:10:44.177] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: vasaller
+[06.07 12:10:44.177] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: vasaller
+[06.07 12:10:44.179] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["faiths","faiths",null,null,0]],null,"en"]
+[06.07 12:10:44.179] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["blekmedel","whitener",null,null,2]],null,"en"]
+[06.07 12:10:44.180] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: faiths
+[06.07 12:10:44.180] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: blekmedel
+[06.07 12:10:44.180] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: faiths
+[06.07 12:10:44.180] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: blekmedel
+[06.07 12:10:44.211] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["perfektione","complected",null,null,0]],null,"en"]
+[06.07 12:10:44.211] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: perfektione
+[06.07 12:10:44.213] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["slöseri","wastage",null,null,0]],null,"en"]
+[06.07 12:10:44.212] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["lokal","local",null,null,2]],null,"en"]
+[06.07 12:10:44.215] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: slöseri
+[06.07 12:10:44.215] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: perfektione
+[06.07 12:10:44.215] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: lokal
+[06.07 12:10:44.215] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: slöseri
+[06.07 12:10:44.215] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: lokal
+[06.07 12:10:44.248] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["grönt","greens",null,null,0]],null,"en"]
+[06.07 12:10:44.248] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Carolyn","Carolyn",null,null,0]],null,"en"]
+[06.07 12:10:44.248] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: grönt
+[06.07 12:10:44.248] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Carolyn
+[06.07 12:10:44.248] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: grönt
+[06.07 12:10:44.249] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Carolyn
+[06.07 12:10:44.249] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["voyager","voyager",null,null,0]],null,"en"]
+[06.07 12:10:44.249] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: voyager
+[06.07 12:10:44.249] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: voyager
+[06.07 12:10:44.281] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Osgood","Osgood",null,null,0]],null,"en"]
+[06.07 12:10:44.281] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Osgood
+[06.07 12:10:44.281] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Osgood
+[06.07 12:10:44.281] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Truckee","Truckee",null,null,0]],null,"en"]
+[06.07 12:10:44.282] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Truckee
+[06.07 12:10:44.282] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Truckee
+[06.07 12:10:44.286] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["disbarred","disbarred",null,null,0]],null,"en"]
+[06.07 12:10:44.286] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: disbarred
+[06.07 12:10:44.286] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: disbarred
+[06.07 12:10:44.318] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["swills","swills",null,null,0]],null,"en"]
+[06.07 12:10:44.318] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: swills
+[06.07 12:10:44.319] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: swills
+[06.07 12:10:44.319] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["överväldigande","overwhelming",null,null,0]],null,"en"]
+[06.07 12:10:44.319] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: överväldigande
+[06.07 12:10:44.319] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: överväldigande
+[06.07 12:10:44.320] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["kommande","coming",null,null,2]],null,"en"]
+[06.07 12:10:44.323] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: kommande
+[06.07 12:10:44.324] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: kommande
+[06.07 12:10:44.355] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["tändsticksask","matchbox",null,null,2]],null,"en"]
+[06.07 12:10:44.355] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["harpist","harpist",null,null,2]],null,"en"]
+[06.07 12:10:44.355] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: tändsticksask
+[06.07 12:10:44.355] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: harpist
+[06.07 12:10:44.355] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: tändsticksask
+[06.07 12:10:44.355] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: harpist
+[06.07 12:10:44.357] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Pearson","Pearson",null,null,0]],null,"en"]
+[06.07 12:10:44.357] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Pearson
+[06.07 12:10:44.357] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Pearson
+[06.07 12:10:44.389] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["credenza","credenza",null,null,0]],null,"en"]
+[06.07 12:10:44.389] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: credenza
+[06.07 12:10:44.389] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: credenza
+[06.07 12:10:44.390] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["oskyddad","unprotected",null,null,2]],null,"en"]
+[06.07 12:10:44.390] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: oskyddad
+[06.07 12:10:44.390] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: oskyddad
+[06.07 12:10:44.393] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["flyspecked","flyspecked",null,null,0]],null,"en"]
+[06.07 12:10:44.394] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: flyspecked
+[06.07 12:10:44.394] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: flyspecked
+[06.07 12:10:44.426] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["adaptrar","adapters",null,null,0]],null,"en"]
+[06.07 12:10:44.426] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["lokalisering","localization",null,null,0]],null,"en"]
+[06.07 12:10:44.427] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: adaptrar
+[06.07 12:10:44.427] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: lokalisering
+[06.07 12:10:44.427] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: adaptrar
+[06.07 12:10:44.427] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: lokalisering
+[06.07 12:10:44.427] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Monotones","monotones",null,null,0]],null,"en"]
+[06.07 12:10:44.427] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Monotones
+[06.07 12:10:44.427] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Monotones
+[06.07 12:10:44.457] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["trevlig","enjoyable",null,null,2]],null,"en"]
+[06.07 12:10:44.457] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: trevlig
+[06.07 12:10:44.457] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: trevlig
+[06.07 12:10:44.458] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["statehouses","statehouses",null,null,0]],null,"en"]
+[06.07 12:10:44.462] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: statehouses
+[06.07 12:10:44.462] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: statehouses
+[06.07 12:10:44.469] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ärm","arm",null,null,2]],null,"en"]
+[06.07 12:10:44.470] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ärm
+[06.07 12:10:44.470] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: ärm
+[06.07 12:10:44.510] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Carmella","Carmella",null,null,0]],null,"en"]
+[06.07 12:10:44.510] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["beslag","trimmings",null,null,0]],null,"en"]
+[06.07 12:10:44.510] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Carmella
+[06.07 12:10:44.510] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: beslag
+[06.07 12:10:44.511] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Carmella
+[06.07 12:10:44.511] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: beslag
+[06.07 12:10:44.511] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["skyndsamhet","promptness",null,null,2]],null,"en"]
+[06.07 12:10:44.511] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: skyndsamhet
+[06.07 12:10:44.511] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: skyndsamhet
+[06.07 12:10:44.543] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["reagera","react",null,null,2]],null,"en"]
+[06.07 12:10:44.544] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: reagera
+[06.07 12:10:44.544] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: reagera
+[06.07 12:10:44.545] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["avlasta","unburden",null,null,2]],null,"en"]
+[06.07 12:10:44.545] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["utbytas","interchanged",null,null,0]],null,"en"]
+[06.07 12:10:44.545] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: avlasta
+[06.07 12:10:44.545] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: utbytas
+[06.07 12:10:44.545] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: avlasta
+[06.07 12:10:44.545] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: utbytas
+[06.07 12:10:44.577] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Unitarians","Unitarians",null,null,0]],null,"en"]
+[06.07 12:10:44.577] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["expropriation","expropriation",null,null,2]],null,"en"]
+[06.07 12:10:44.578] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Unitarians
+[06.07 12:10:44.578] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: expropriation
+[06.07 12:10:44.578] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Unitarians
+[06.07 12:10:44.578] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: expropriation
+[06.07 12:10:44.578] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["satsad","staked",null,null,0]],null,"en"]
+[06.07 12:10:44.578] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: satsad
+[06.07 12:10:44.582] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: satsad
+[06.07 12:10:44.612] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["skyddande","protecting",null,null,0]],null,"en"]
+[06.07 12:10:44.612] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Falkland","Falkland",null,null,0]],null,"en"]
+[06.07 12:10:44.613] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: skyddande
+[06.07 12:10:44.613] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Falkland
+[06.07 12:10:44.613] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: skyddande
+[06.07 12:10:44.613] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Falkland
+[06.07 12:10:44.613] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["inkongruens","incongruity",null,null,2]],null,"en"]
+[06.07 12:10:44.614] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: inkongruens
+[06.07 12:10:44.614] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: inkongruens
+[06.07 12:10:44.646] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Bede","Bede",null,null,0]],null,"en"]
+[06.07 12:10:44.646] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Bede
+[06.07 12:10:44.646] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Bede
+[06.07 12:10:44.647] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["doily","doily",null,null,0]],null,"en"]
+[06.07 12:10:44.648] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: doily
+[06.07 12:10:44.648] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: doily
+[06.07 12:10:44.649] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bogging","bogging",null,null,0]],null,"en"]
+[06.07 12:10:44.649] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bogging
+[06.07 12:10:44.649] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: bogging
+[06.07 12:10:44.682] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["urringning","neckline",null,null,2]],null,"en"]
+[06.07 12:10:44.682] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["perking","perking",null,null,0]],null,"en"]
+[06.07 12:10:44.682] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: urringning
+[06.07 12:10:44.682] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: perking
+[06.07 12:10:44.682] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: urringning
+[06.07 12:10:44.682] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: perking
+[06.07 12:10:44.683] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["dole","dole",null,null,0]],null,"en"]
+[06.07 12:10:44.683] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: dole
+[06.07 12:10:44.683] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: dole
+[06.07 12:10:44.717] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bifogade patent","subjoined",null,null,0]],null,"en"]
+[06.07 12:10:44.717] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bifogade patent
+[06.07 12:10:44.717] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: bifogade patent
+[06.07 12:10:44.717] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["jagas","hunted",null,null,0]],null,"en"]
+[06.07 12:10:44.719] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["skada","harm",null,null,2]],null,"en"]
+[06.07 12:10:44.721] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: jagas
+[06.07 12:10:44.721] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: skada
+[06.07 12:10:44.722] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: jagas
+[06.07 12:10:44.722] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: skada
+[06.07 12:10:44.751] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["hjälpsamhet","helpfulness",null,null,0]],null,"en"]
+[06.07 12:10:44.751] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: hjälpsamhet
+[06.07 12:10:44.751] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: hjälpsamhet
+[06.07 12:10:44.753] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["sympati","sympathy",null,null,2]],null,"en"]
+[06.07 12:10:44.753] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: sympati
+[06.07 12:10:44.753] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: sympati
+[06.07 12:10:44.756] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["råttfångare","mouser",null,null,2]],null,"en"]
+[06.07 12:10:44.757] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: råttfångare
+[06.07 12:10:44.757] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: råttfångare
+[06.07 12:10:44.787] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["tourniquet","tourniquet",null,null,0]],null,"en"]
+[06.07 12:10:44.787] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: tourniquet
+[06.07 12:10:44.787] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: tourniquet
+[06.07 12:10:44.788] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bårhus","mortuaries",null,null,0]],null,"en"]
+[06.07 12:10:44.788] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["folio","folio",null,null,2]],null,"en"]
+[06.07 12:10:44.789] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bårhus
+[06.07 12:10:44.789] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: folio
+[06.07 12:10:44.789] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: bårhus
+[06.07 12:10:44.789] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: folio
+[06.07 12:10:44.817] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["samarbeta","cooperate",null,null,2]],null,"en"]
+[06.07 12:10:44.817] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["huffed","huffed",null,null,0]],null,"en"]
+[06.07 12:10:44.818] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: samarbeta
+[06.07 12:10:44.818] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: huffed
+[06.07 12:10:44.818] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: samarbeta
+[06.07 12:10:44.818] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: huffed
+[06.07 12:10:44.821] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["immatrikulera","matriculate",null,null,2]],null,"en"]
+[06.07 12:10:44.821] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: immatrikulera
+[06.07 12:10:44.822] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: immatrikulera
+[06.07 12:10:44.880] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bestämdhet","assertiveness",null,null,0]],null,"en"]
+[06.07 12:10:44.880] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Mashhad","Mashhad",null,null,0]],null,"en"]
+[06.07 12:10:44.881] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bestämdhet
+[06.07 12:10:44.881] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Mashhad
+[06.07 12:10:44.881] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: bestämdhet
+[06.07 12:10:44.881] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Mashhad
+[06.07 12:10:44.881] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["österrikisk","Austrian",null,null,2]],null,"en"]
+[06.07 12:10:44.881] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: österrikisk
+[06.07 12:10:44.881] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: österrikisk
+[06.07 12:10:44.924] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["illustrationer","illustrations",null,null,0]],null,"en"]
+[06.07 12:10:44.925] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: illustrationer
+[06.07 12:10:44.925] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: illustrationer
+[06.07 12:10:44.925] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["hemman","homestead",null,null,2]],null,"en"]
+[06.07 12:10:44.925] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: hemman
+[06.07 12:10:44.925] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: hemman
+[06.07 12:10:44.931] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["rättskaffenhet","rectitude",null,null,2]],null,"en"]
+[06.07 12:10:44.931] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: rättskaffenhet
+[06.07 12:10:44.931] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: rättskaffenhet
+[06.07 12:10:44.961] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["troop","troopship",null,null,0]],null,"en"]
+[06.07 12:10:44.961] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: troop
+[06.07 12:10:44.961] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: troop
+[06.07 12:10:44.962] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Iago","Iago",null,null,0]],null,"en"]
+[06.07 12:10:44.962] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Iago
+[06.07 12:10:44.962] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Iago
+[06.07 12:10:44.963] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["uppnå","attaining",null,null,0]],null,"en"]
+[06.07 12:10:44.963] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: uppnå
+[06.07 12:10:44.963] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: uppnå
+[06.07 12:10:44.993] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bugling","bugling",null,null,0]],null,"en"]
+[06.07 12:10:44.993] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Isherwood","Isherwood",null,null,0]],null,"en"]
+[06.07 12:10:44.994] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bugling
+[06.07 12:10:44.994] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ödesbestämd","fated",null,null,2]],null,"en"]
+[06.07 12:10:44.994] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Isherwood
+[06.07 12:10:44.995] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ödesbestämd
+[06.07 12:10:44.995] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: bugling
+[06.07 12:10:45.007] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Isherwood
+[06.07 12:10:45.007] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: ödesbestämd
+[06.07 12:10:45.036] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["blandningar","mixtures",null,null,0]],null,"en"]
+[06.07 12:10:45.036] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: blandningar
+[06.07 12:10:45.036] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: blandningar
+[06.07 12:10:45.038] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["skynda","hurry",null,null,2]],null,"en"]
+[06.07 12:10:45.038] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: skynda
+[06.07 12:10:45.038] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: skynda
+[06.07 12:10:45.040] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["vertigo","vertigo",null,null,2]],null,"en"]
+[06.07 12:10:45.041] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: vertigo
+[06.07 12:10:45.041] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: vertigo
+[06.07 12:10:45.071] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["tiller","accorded",null,null,0]],null,"en"]
+[06.07 12:10:45.071] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: tiller
+[06.07 12:10:45.071] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: tiller
+[06.07 12:10:45.072] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ensemble","ensemble",null,null,2]],null,"en"]
+[06.07 12:10:45.072] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["paus","intermission",null,null,2]],null,"en"]
+[06.07 12:10:45.072] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ensemble
+[06.07 12:10:45.072] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: paus
+[06.07 12:10:45.072] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: ensemble
+[06.07 12:10:45.072] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: paus
+[06.07 12:10:45.101] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Lonnie","Lonnie",null,null,0]],null,"en"]
+[06.07 12:10:45.101] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Lonnie
+[06.07 12:10:45.102] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Lonnie
+[06.07 12:10:45.103] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["flecked","flecked",null,null,0]],null,"en"]
+[06.07 12:10:45.103] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["badkar","tub",null,null,1]],null,"en"]
+[06.07 12:10:45.103] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: flecked
+[06.07 12:10:45.103] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: badkar
+[06.07 12:10:45.103] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: flecked
+[06.07 12:10:45.103] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: badkar
+[06.07 12:10:45.134] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["legate","legate",null,null,0]],null,"en"]
+[06.07 12:10:45.135] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Tad","Tad",null,null,0]],null,"en"]
+[06.07 12:10:45.135] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["pensionär","pensioner",null,null,2]],null,"en"]
+[06.07 12:10:45.147] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: legate
+[06.07 12:10:45.147] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Tad
+[06.07 12:10:45.148] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: pensionär
+[06.07 12:10:45.148] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: legate
+[06.07 12:10:45.149] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: pensionär
+[06.07 12:10:45.148] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Tad
+[06.07 12:10:45.186] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["utfört felsökning","troubleshot",null,null,0]],null,"en"]
+[06.07 12:10:45.186] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["transkribera","transliterate",null,null,0]],null,"en"]
+[06.07 12:10:45.186] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: utfört felsökning
+[06.07 12:10:45.186] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: transkribera
+[06.07 12:10:45.186] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: utfört felsökning
+[06.07 12:10:45.186] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: transkribera
+[06.07 12:10:45.187] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["numbskulls","numbskulls",null,null,0]],null,"en"]
+[06.07 12:10:45.187] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: numbskulls
+[06.07 12:10:45.187] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: numbskulls
+[06.07 12:10:45.239] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["garlanding","garlanding",null,null,0]],null,"en"]
+[06.07 12:10:45.239] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["kulram","abacuses",null,null,0]],null,"en"]
+[06.07 12:10:45.240] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: garlanding
+[06.07 12:10:45.240] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: kulram
+[06.07 12:10:45.240] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: garlanding
+[06.07 12:10:45.240] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: kulram
+[06.07 12:10:45.241] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Ohioans","Ohioans",null,null,0]],null,"en"]
+[06.07 12:10:45.241] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Ohioans
+[06.07 12:10:45.241] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Ohioans
+[06.07 12:10:45.271] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["revokable","revokable",null,null,0]],null,"en"]
+[06.07 12:10:45.271] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: revokable
+[06.07 12:10:45.271] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["brev","letterheads",null,null,0]],null,"en"]
+[06.07 12:10:45.271] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: revokable
+[06.07 12:10:45.272] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: brev
+[06.07 12:10:45.272] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: brev
+[06.07 12:10:45.273] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Media","Media",null,null,2]],null,"en"]
+[06.07 12:10:45.275] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Media
+[06.07 12:10:45.276] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Media
+[06.07 12:10:45.327] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["pod","pod",null,null,0]],null,"en"]
+[06.07 12:10:45.328] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["bidra","contribute",null,null,1]],null,"en"]
+[06.07 12:10:45.328] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["auspiciousness","auspiciousness",null,null,0]],null,"en"]
+[06.07 12:10:45.328] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: pod
+[06.07 12:10:45.328] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: bidra
+[06.07 12:10:45.328] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: auspiciousness
+[06.07 12:10:45.328] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: pod
+[06.07 12:10:45.328] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: bidra
+[06.07 12:10:45.328] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: auspiciousness
+[06.07 12:10:45.357] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Antofagasta","Antofagasta",null,null,0]],null,"en"]
+[06.07 12:10:45.357] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["stympar","mutilates",null,null,0]],null,"en"]
+[06.07 12:10:45.357] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Walt","Walt",null,null,0]],null,"en"]
+[06.07 12:10:45.357] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: stympar
+[06.07 12:10:45.357] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Walt
+[06.07 12:10:45.357] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Antofagasta
+[06.07 12:10:45.358] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: stympar
+[06.07 12:10:45.358] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Walt
+[06.07 12:10:45.358] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Antofagasta
+[06.07 12:10:45.389] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["inkapsling","encapsulation",null,null,0]],null,"en"]
+[06.07 12:10:45.390] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: inkapsling
+[06.07 12:10:45.391] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: inkapsling
+[06.07 12:10:45.392] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["David","David",null,null,0]],null,"en"]
+[06.07 12:10:45.392] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: David
+[06.07 12:10:45.393] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: David
+[06.07 12:10:45.393] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["kiselalger","diatoms",null,null,0]],null,"en"]
+[06.07 12:10:45.394] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: kiselalger
+[06.07 12:10:45.395] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: kiselalger
+[06.07 12:10:45.426] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["stultified","stultified",null,null,0]],null,"en"]
+[06.07 12:10:45.426] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: stultified
+[06.07 12:10:45.427] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Carolinian","Carolinian",null,null,0]],null,"en"]
+[06.07 12:10:45.430] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: stultified
+[06.07 12:10:45.427] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Sana","Sana",null,null,0]],null,"en"]
+[06.07 12:10:45.430] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Carolinian
+[06.07 12:10:45.430] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Sana
+[06.07 12:10:45.430] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Carolinian
+[06.07 12:10:45.430] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Sana
+[06.07 12:10:45.461] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["semi","semiprofessional",null,null,0]],null,"en"]
+[06.07 12:10:45.461] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["ken","ken",null,null,0]],null,"en"]
+[06.07 12:10:45.461] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Trötthet","fatigue",null,null,1]],null,"en"]
+[06.07 12:10:45.462] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: semi
+[06.07 12:10:45.462] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: ken
+[06.07 12:10:45.462] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Trötthet
+[06.07 12:10:45.462] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: semi
+[06.07 12:10:45.463] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: ken
+[06.07 12:10:45.463] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Trötthet
+[06.07 12:10:45.509] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["rekursion","recursion",null,null,2]],null,"en"]
+[06.07 12:10:45.510] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: rekursion
+[06.07 12:10:45.510] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: rekursion
+[06.07 12:10:45.511] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["pop-","pop",null,null,2]],null,"en"]
+[06.07 12:10:45.511] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: pop-
+[06.07 12:10:45.511] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: pop-
+[06.07 12:10:45.514] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["din","yours",null,null,2]],null,"en"]
+[06.07 12:10:45.514] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: din
+[06.07 12:10:45.514] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: din
+[06.07 12:10:45.544] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["uteplats","patio",null,null,2]],null,"en"]
+[06.07 12:10:45.544] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: uteplats
+[06.07 12:10:45.544] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["gömställen","hideouts",null,null,0]],null,"en"]
+[06.07 12:10:45.544] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: uteplats
+[06.07 12:10:45.544] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["förlamning","palsy",null,null,2]],null,"en"]
+[06.07 12:10:45.544] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: gömställen
+[06.07 12:10:45.544] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: förlamning
+[06.07 12:10:45.544] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: gömställen
+[06.07 12:10:45.548] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: förlamning
+[06.07 12:10:45.600] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["kortlingar","noggins",null,null,0]],null,"en"]
+[06.07 12:10:45.600] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["mus","mouse",null,null,2]],null,"en"]
+[06.07 12:10:45.600] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: kortlingar
+[06.07 12:10:45.600] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: mus
+[06.07 12:10:45.600] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: kortlingar
+[06.07 12:10:45.600] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: mus
+[06.07 12:10:45.601] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Jacksonian","Jacksonian",null,null,0]],null,"en"]
+[06.07 12:10:45.601] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Jacksonian
+[06.07 12:10:45.601] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: Jacksonian
+[06.07 12:10:45.651] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Attends","attends",null,null,0]],null,"en"]
+[06.07 12:10:45.651] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Attends
+[06.07 12:10:45.651] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: Attends
+[06.07 12:10:45.655] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["uttryckslös","deadpan",null,null,2]],null,"en"]
+[06.07 12:10:45.655] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["Marty","Marty",null,null,0]],null,"en"]
+[06.07 12:10:45.655] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: uttryckslös
+[06.07 12:10:45.655] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: Marty
+[06.07 12:10:45.655] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: uttryckslös
+[06.07 12:10:45.655] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: Marty
+[06.07 12:10:45.685] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["be","pray",null,null,2]],null,"en"]
+[06.07 12:10:45.686] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: be
+[06.07 12:10:45.686] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: be
+[06.07 12:10:45.686] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["apprehensiveness","apprehensiveness",null,null,0]],null,"en"]
+[06.07 12:10:45.686] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: apprehensiveness
+[06.07 12:10:45.686] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: apprehensiveness
+[06.07 12:10:45.686] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["takfot","eave",null,null,0]],null,"en"]
+[06.07 12:10:45.686] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: takfot
+[06.07 12:10:45.686] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: takfot
+[06.07 12:10:45.717] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["svordomar","swearwords",null,null,1]],null,"en"]
+[06.07 12:10:45.717] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["lysa skarpt","glare",null,null,2]],null,"en"]
+[06.07 12:10:45.718] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: svordomar
+[06.07 12:10:45.719] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["oorganiserad","disorganized",null,null,0]],null,"en"]
+[06.07 12:10:45.718] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: lysa skarpt
+[06.07 12:10:45.729] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: svordomar
+[06.07 12:10:45.729] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: oorganiserad
+[06.07 12:10:45.729] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: lysa skarpt
+[06.07 12:10:45.729] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: oorganiserad
+[06.07 12:10:45.761] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["triage","triage",null,null,0]],null,"en"]
+[06.07 12:10:45.761] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["militant","militantly",null,null,0]],null,"en"]
+[06.07 12:10:45.761] [:pool-1-thread-1] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: triage
+[06.07 12:10:45.761] [:pool-1-thread-2] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: militant
+[06.07 12:10:45.762] [:pool-1-thread-1] INFO  org.disorg.TranslationTask.call - translation: triage
+[06.07 12:10:45.762] [:pool-1-thread-2] INFO  org.disorg.TranslationTask.call - translation: militant
+[06.07 12:10:45.765] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Returned RAW response: [[["titt","peek",null,null,2]],null,"en"]
+[06.07 12:10:45.765] [:pool-1-thread-3] DEBUG org.disorg.TranslationTask.call - Parsed RAW translation: titt
+[06.07 12:10:45.765] [:pool-1-thread-3] INFO  org.disorg.TranslationTask.call - translation: titt
+[06.07 12:10:45.781] [:Thread-1] INFO  org.springframework.context.support.AbstractApplicationContext.doClose - Closing org.springframework.web.context.support.GenericWebApplicationContext@3214ee6: startup date [Wed Jun 07 12:10:41 PDT 2017]; root of context hierarchy

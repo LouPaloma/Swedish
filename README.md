@@ -6,6 +6,7 @@ The supplied project provides a minimally viable product (MVP) to meet the requi
 
 I welcome any questions or comments and look forward to hearing back from you.
  
+Project requirements can be found in the file `src\test\resources\README.txt`
 
 # Build
 
